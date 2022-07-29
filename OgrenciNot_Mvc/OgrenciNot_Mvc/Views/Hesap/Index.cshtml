@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="background-color:darkgray; border-radius: 50px; width: 400px; height: 200px; margin:50px; margin-left:280px;">
+    <h2 style="text-align:center" class="table table-hover">Hesap Makinesi</h2>
+
+    <br />
+
+    <form class="form-group" method="post" style="text-align:center" class="table table-bordered">
+
+        <div>
+            <div style="text-align:center;border-radius:10px;border-block-color:antiquewhite;">
+                Sayı 1 : <input type="text" name="sayi1" id="sayi1" /><br /><br />
+                Sayı 2 : <input type="text" name="sayi2" id="sayi2" />  <br /> <br />
+                <button class="btn btn-warning" style="margin-top:10px;"> Hesapla </button>
+            </div>
+        </div>
+</div>
+
+<table style="text-align:center;margin-top:10px;" class="table table-bordered">
+    <tr>
+        <th>      </th>
+        <th> TOPLAM  </th>
+        <th>ÇIKARMA   </th>
+        <th> BÖLME  </th>
+        <th> ÇARPMA  </th>
+    </tr>
+    <tr>
+
+        <th> SAYI1:@ViewBag.sayi1    </th>
+        <th rowspan="2"> @ViewBag.tpl</th>
+        <th rowspan="2"> @ViewBag.ckr</th>
+        <th rowspan="2"> @ViewBag.crp</th>
+        <th rowspan="2"> @ViewBag.blm</th>
+
+
+
+
+
+    </tr>
+    <tr>
+        <th>SAYI2:@ViewBag.sayi2</th>
+    </tr>
+</table>
+
+
+
+
+
+
+</form>
